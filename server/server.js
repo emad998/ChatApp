@@ -49,5 +49,5 @@ app.post('/upload', (req, res) => {
     });
   });
   
-
+app.all('*', (req, res) => res.sendFile(__dirname + '/client/build/index.html'))
 // upload Endpoint - sending request from React 
